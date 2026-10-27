@@ -1,0 +1,31 @@
+
+# Java build output
+target/
+**/target/
+build/
+out/
+*.class
+
+# IDE files
+.idea/
+.vscode/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+**/application-local.properties
+**/application-secret.properties
+**/secrets.properties
+**/config.properties
+
+
+# Private database dumps and local databases
+*.dump
+*.bak
+*.sqlite
+*.sqlite3
+
+# Ignore database folder contents except SQL schema files
+database/*
+!database/*.sql
